@@ -30,7 +30,7 @@ function DragonItem({ dragon: { name, active, first_flight, wikipedia } }) {
           </h4>
           <p>
             First Flight: <Moment format="YYYY-MM-DD">{first_flight}</Moment> |{" "}
-            <span class="text-muted">Wikipedia: {wikipedia}</span>
+            <span className="text-muted">Wikipedia: {wikipedia}</span>
           </p>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default class Dragons extends Component {
 
             return (
               <>
-                {data.dragons.map(dragon => (
+                {data.dragons.map((dragon) => (
                   <DragonItem key={dragon.id} dragon={dragon} />
                 ))}
               </>

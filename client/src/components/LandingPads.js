@@ -20,7 +20,8 @@ function LandingPadItem({ landpad: { id, full_name, wikipedia } }) {
         <div className="col-md-9">
           <h4>Name: {full_name}</h4>
           <p>
-            ID: {id} | <span class="text-muted">Wikipedia: {wikipedia}</span>
+            ID: {id} |{" "}
+            <span className="text-muted">Wikipedia: {wikipedia}</span>
           </p>
         </div>
       </div>
@@ -41,7 +42,7 @@ export default class LandingPads extends Component {
 
             return (
               <>
-                {data.landpads.map(landpad => (
+                {data.landpads.map((landpad) => (
                   <LandingPadItem key={landpad.id} landpad={landpad} />
                 ))}
               </>

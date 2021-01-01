@@ -29,7 +29,7 @@ function ShipItem({ ship: { ship_name, active, year_built, image } }) {
           </h4>
           <p>
             Year Built: {year_built} |{" "}
-            <span class="text-muted">Image: {image}</span>
+            <span className="text-muted">Image: {image}</span>
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default class Ships extends Component {
 
             return (
               <>
-                {data.ships.map(ship => (
+                {data.ships.map((ship) => (
                   <ShipItem key={ship.ship_id} ship={ship} />
                 ))}
               </>
