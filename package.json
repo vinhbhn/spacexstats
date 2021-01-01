@@ -1,5 +1,5 @@
 {
-  "name": "spacexstats",
+  "name": "spacex-stat-s",
   "version": "1.0.0",
   "description": "SpaceX stats using React, GraphQL, Apollo",
   "main": "server.js",
@@ -7,8 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "vinhbhn",
   "license": "ISC",
