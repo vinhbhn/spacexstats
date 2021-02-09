@@ -1,27 +1,21 @@
-# SpaceX Stats
-
-> React, GraphQL, Apollo app that uses the SpaceX API to display
-
 ## Quick Start
 
 ```bash
 # Install dependencies (server & client)
-npm install
-cd client && npm install
+yarn
+cd client && yarn
 
 # Run server & client (:3000 & :5000)
-npm run dev
+yarn dev
 
 # Server only (:5000)
-npm run server
+yarn server
 
 # Client only (:3000)
-npm run client
+yarn client
 
 # Build for production (Builds into server ./public)
-cd client && npm run build
+cd client && yarn build
 
 # Graphiql - http://localhost:5000/graphql
 ```
-
-
